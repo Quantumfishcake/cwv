@@ -1,0 +1,57 @@
+[debug] [2023-01-25T03:53:38.020Z] ----------------------------------------------------------------------
+[debug] [2023-01-25T03:53:38.022Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Quant\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-01-25T03:53:38.022Z] CLI Version:   11.21.0
+[debug] [2023-01-25T03:53:38.022Z] Platform:      win32
+[debug] [2023-01-25T03:53:38.022Z] Node Version:  v16.14.0
+[debug] [2023-01-25T03:53:38.023Z] Time:          Wed Jan 25 2023 14:53:38 GMT+1100 (Australian Eastern Daylight Time)
+[debug] [2023-01-25T03:53:38.023Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-25T03:53:38.089Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-25T03:53:38.090Z] > authorizing via signed-in user (tomquant123@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Quant\Dev\cwv
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-25T03:53:41.059Z] Using project from CLI flag: corewebvitals-30437
+[debug] [2023-01-25T03:53:41.062Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/corewebvitals-30437 [none]
+[debug] [2023-01-25T03:53:41.573Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/corewebvitals-30437 200
+[debug] [2023-01-25T03:53:41.573Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/corewebvitals-30437 {"projectId":"corewebvitals-30437","projectNumber":"514585926270","displayName":"Corewebvitals","name":"projects/corewebvitals-30437","resources":{"hostingSite":"corewebvitals-30437","storageBucket":"corewebvitals-30437.appspot.com","locationId":"australia-southeast1"},"state":"ACTIVE","etag":"1_09d7dd6b-247c-4b13-87a7-cdfc776486b3"}
+[info] i  Using project corewebvitals-30437 (Corewebvitals) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] i  Detected a .git folder at C:\Users\Quant\Dev\cwv 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=326782564&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-01-25T03:53:48.288Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-01-25T03:53:48.288Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-01-25T03:53:48.649Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-01-25T03:53:48.649Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-01-25T03:53:48.655Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-01-25T03:53:49.050Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-01-25T03:53:49.050Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Quantumfishcake","id":38376693,"node_id":"MDQ6VXNlcjM4Mzc2Njkz","avatar_url":"https://avatars.githubusercontent.com/u/38376693?v=4","gravatar_id":"","url":"https://api.github.com/users/Quantumfishcake","html_url":"https://github.com/Quantumfishcake","followers_url":"https://api.github.com/users/Quantumfishcake/followers","following_url":"https://api.github.com/users/Quantumfishcake/following{/other_user}","gists_url":"https://api.github.com/users/Quantumfishcake/gists{/gist_id}","starred_url":"https://api.github.com/users/Quantumfishcake/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Quantumfishcake/subscriptions","organizations_url":"https://api.github.com/users/Quantumfishcake/orgs","repos_url":"https://api.github.com/users/Quantumfishcake/repos","events_url":"https://api.github.com/users/Quantumfishcake/events{/privacy}","received_events_url":"https://api.github.com/users/Quantumfishcake/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":20,"public_gists":0,"followers":5,"following":0,"created_at":"2018-04-14T11:32:01Z","updated_at":"2023-01-07T01:50:19Z","private_gists":5,"total_private_repos":0,"owned_private_repos":0,"disk_usage":36476,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Quantumfishcake 
+[info] 
